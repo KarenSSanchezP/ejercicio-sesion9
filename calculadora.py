@@ -1,13 +1,13 @@
 import producto
 import resta
-import suma
-import division
+from suma import suma
+from division import division
 
 def calculadora(operacion, numero1, numero2):
     if operacion == '1':
-        return suma.suma(numero1, numero2)
+        return suma(numero1, numero2)
     elif operacion == '2':
-        return division.division(numero1, numero2)
+        return division(numero1, numero2)
     elif operacion == '3':
         return producto.producto(numero1, numero2)
     elif operacion == '4':
